@@ -3,10 +3,10 @@ import data from './data/data.json';
 import friends from './data/friends.json';
 import transactions from './data/transactions.json';
 
-import { Profile } from './components/Profile.jsx';
-import { Statistics } from './components/Statistics.jsx';
-import { FriendList } from './components/FriendList.jsx';
-import { TransactionHistory } from './components/TransactionHistory';
+import { Profile } from './components/Profile/Profile.jsx';
+import { Statistics } from './components/Statistics/Statistics.jsx';
+import { FriendList } from './components/FriendList/FriendList.jsx';
+import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (

@@ -14,8 +14,8 @@ export const Statistics = ({ title, stats }) => {
         backgroundColor: getRandomHexColor(),
       }}
     >
-      <span class="label">{stat.label}</span>
-      <span class="percentage">{stat.percentage}%</span>
+      <span>{stat.label}</span>
+      <span>{stat.percentage}%</span>
     </li>
   ));
   return (

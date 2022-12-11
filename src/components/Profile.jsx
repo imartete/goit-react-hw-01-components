@@ -10,7 +10,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <p className={css.tag}>@{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
-
       <ul className={css.stats}>
         <li className={css.statsItem}>
           <span className={css.label}>Followers</span>

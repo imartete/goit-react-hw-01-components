@@ -1,0 +1,29 @@
+table {
+  color: grey;
+  table-layout: fixed;
+  width: 1200px;
+}
+
+thead {
+  background-color: #86dada;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.td_type {
+  text-transform: capitalize;
+}
+
+th {
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background: rgb(228, 228, 228);
+}

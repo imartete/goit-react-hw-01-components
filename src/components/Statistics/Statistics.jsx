@@ -6,22 +6,23 @@ function getRandomHexColor() {
 }
 
 export const Statistics = ({ title, stats }) => {
-  const listeItem = stats.map(stat => (
-    <li
-      key={stat.id}
-      className={css.statsItem}
-      style={{
-        backgroundColor: getRandomHexColor(),
-      }}
-    >
-      <span>{stat.label}</span>
-      <span>{stat.percentage}%</span>
-    </li>
-  ));
   return (
     <section className={css.statistics}>
       <h2 className={css.statsTitle}>{title}</h2>
-      <ul className={css.statList}>{listeItem}</ul>
+      <ul className={css.statList}>
+        {stats.map(stat => (
+          <li
+            key={stat.id}
+            className={css.statsItem}
+            style={{
+              backgroundColor: getRandomHexColor(),
+            }}
+          >
+            <span>{stat.label}</span>
+            <span>{stat.percentage}%</span>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };

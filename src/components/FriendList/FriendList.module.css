@@ -24,3 +24,13 @@
   height: 10px;
   border-radius: 50%;
 }
+
+.statusOnline {
+  composes: friendStatus;
+  background-color: green;
+}
+
+.statusOffline {
+  composes: friendStatus;
+  background-color: red;
+}
